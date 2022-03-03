@@ -1,0 +1,18 @@
+pgUser: ENC[AES256_GCM,data:+TGr6XhzKoSCOA==,iv:ylCAOkOiJC/gaC8sXnwNwMVhZ2XHAIPijLJsMJE62CI=,tag:sGJ7nX8CbyLSVNoT6Lv4kg==,type:str]
+pgPass: ENC[AES256_GCM,data:f1lySUsy7wii6j1NetTNl5WJR+ByK4l7EPQ1pHQ3z0o=,iv:5TZbDZWuQfmG3w+3iVLlUPXMW1irMC/FwzLiE7OO8/M=,tag:xLHVNstJtleMYgAZO/HR2g==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault:
+        - vault_address: https://vault.atala.iog.io
+          engine_path: sops
+          key_name: dev
+          created_at: "2022-02-15T21:47:28Z"
+          enc: vault:v1:itau7Zqwp50SEjuw5hKLV0EKxgdCSp+wjipqfPks98Tkz3ddrWGuvKpwT7IL36TdRNoun7iCu+tXqhY3
+    age: []
+    lastmodified: "2022-02-15T21:50:29Z"
+    mac: ENC[AES256_GCM,data:gvPqF26rLkBasEeqOAF2Kh7qf7adfxfd4KDEKI5YHatcUD88kkV++mFIjnEk2c5+a7BmlkYdL5fP9JGUlhaoZXn7oRSJ4fI697NDx12VOqergY/hujyVLXtxaXMDZIcpgNwrJYQmjEjo+fTzKY1rDjfM5lqEYe2TLsvGtEuwOi8=,iv:a8fqsR9HqPV0gCA5yGZxIEhrwym2vkSATJLoG5SUzQc=,tag:70hArvKRym6HTpPRY8ChZA==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.7.1

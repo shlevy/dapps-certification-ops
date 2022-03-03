@@ -1,0 +1,18 @@
+nodePsqlPassword: ENC[AES256_GCM,data:rIP77L58WjV+uoYIczfNg0Y2I4p/ZZRB,iv:82w4D+VaELoqJsHVB84D2CClaLe4hjFwQae/1s6IjxM=,tag:6jptSAKvSvPdqiu75+Q/kw==,type:str]
+nodePsqlUsername: ENC[AES256_GCM,data:bNDID18=,iv:y4u/DJUD0IsTJ2QUiAMPAhcV1EX5hZBvSZqs5Hp15us=,tag:6GUyvv7ielBCGY8zVrT2eQ==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault:
+        - vault_address: https://vault.atala.iog.io
+          engine_path: sops
+          key_name: dev
+          created_at: "2022-02-15T23:40:09Z"
+          enc: vault:v1:rHAuvkRzrrLRCABji/7FXmnlewPAWTJMZQULp2TjraZCV0Rx1ZVEhjpdsEbBOHLwC9EoQP/8jH1x0XDz
+    age: []
+    lastmodified: "2022-02-15T23:41:03Z"
+    mac: ENC[AES256_GCM,data:fLftDjm0gaZOD/gI0DZaf14ZZybEFbzcrDyVCjJZ8sXhx1brFPIsEq9dEP0G8tk6Oe0i07KOf7vIQ5y7plEuUqD78yClLmCDF8nMhDkUqvpq37dhJ3uNljzG2BsyrDJa0XacrCjnbhj6Zlzt8zggVvR7iRGB/+gyrK31DVtv+II=,iv:ldorfRn5+8CXXN1FKhDIpI1T+fWxMKomLBaeI7cwc+M=,tag:HuPxSLhqDxUwlCxJVZBKUA==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.7.1

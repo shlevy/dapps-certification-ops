@@ -1,0 +1,24 @@
+patroniApi: ENC[AES256_GCM,data:+hCU,iv:I+zDzgDONiYnSSmTqc6DXHRziLRmUYvngUM0/ZpcIrA=,tag:dzL7kO0XZTKfUxU70UOyKw==,type:str]
+patroniApiPass: ENC[AES256_GCM,data:5aojurAmL6/LlkkI2utf0wHZ/oGodBbOzJWah7u4O8s=,iv:H2DbMA07SUa7DdTOMi2sGj5427VL7CaaKTU0xVRzTpk=,tag:8VwXHK8mk55MUR72ukXtKQ==,type:str]
+patroniRepl: ENC[AES256_GCM,data:ZhVBbA==,iv:LSs+ZjUf7XRnkxzT8Ho00KK9/lTxEcG3+ntDq2HGqCM=,tag:XvTuCl6/g/uXWG+QUP9ihA==,type:str]
+patroniReplPass: ENC[AES256_GCM,data:TaRyQ9mYPrr2TvDhZ0whhaktm/v4+u3usiqREF1/LyQ=,iv:lFxbt5CF8d+5Pz4beaZYu6Ie6ItP7wFb21Une6znPU0=,tag:pFy8lJG4hRulYMDHlbvmQw==,type:str]
+patroniRewind: ENC[AES256_GCM,data:S7RkFDw3,iv:SoqBvgYych0UYqNKsjY27e8ciOCdGwYcqCiq91+G+/4=,tag:CkwJ89ei1zEe02QkCOq73w==,type:str]
+patroniRewindPass: ENC[AES256_GCM,data:644OAjzTGo+3bWWAo631NiHT8Cg37AQbPxKGtLiTOIM=,iv:+p9l54PnajC//NrjUINGqQGW4sktKsz6Y4lnBio2FaE=,tag:yda+YNsYJG8AtIZzrVd1Aw==,type:str]
+patroniSuper: ENC[AES256_GCM,data:0vkr,iv:Q4U8A64g3m9TCqR2AjpzYLoIL1uA/rx1SvSLypuS72Y=,tag:i1Kvyz+7PlLvJ5PFDhRbjg==,type:str]
+patroniSuperPass: ENC[AES256_GCM,data:Zn1nnaO33r2SMESZjwj2TPmmhwk+cAQxAn8qvHxfa1U=,iv:OWHHzqQ4WsjlGIcOgtxGce2EmFIW19tEfYygMDDmvNI=,tag:w5nhENZDhmVB/MUhZm/Zig==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault:
+        - vault_address: https://vault.atala.iog.io
+          engine_path: sops
+          key_name: dev
+          created_at: "2022-01-20T02:16:11Z"
+          enc: vault:v1:ZuqmMgaId2/L5HQMZxyOby0FenDwdlC2hCDA6eCDZxiEENBPzir1/CfkPGWSYx5juQnT1Kyn67CBy0mS
+    age: []
+    lastmodified: "2022-02-15T22:07:59Z"
+    mac: ENC[AES256_GCM,data:5he5PF4PKobN7xtuihwXQP84NWHai+ImZ6H9tnIeV6URIg/MHfGFZaN5uV6FwhwcVBLAUOhxgxhvlF77TBA9F+ndHtv/zNS4uD+JPpgLrTIU2+60YbdTthXkHDGTsQMn1IBu4a84GTeWZ42+N7E5Lr9MSLGbWaGMgm0QnloGsg4=,iv:C0nAFZx+TxWbeNcZ0DCSYGqPDKEh+cBxo1v/OxMpIFE=,tag:/om+3NgGhDh9XnOsjp1gfw==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.7.1
