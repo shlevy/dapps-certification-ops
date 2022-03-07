@@ -64,8 +64,7 @@ in {
                 ];
               node_class = "prod";
             }
-          ] (args:
-          let
+          ] (args: let
             attrs = ({
               desiredCapacity = 1;
               instanceType = "t3a.large";
@@ -77,12 +76,14 @@ in {
               securityGroupRules = {
                 inherit (securityGroupRules) internet internal ssh;
               };
-            } // args);
+            }
+            // args);
             asgName = "client-${attrs.region}-${
-              builtins.replaceStrings [ ''.'' ] [ ''-'' ] attrs.instanceType
+              builtins.replaceStrings [''.''] [''-''] attrs.instanceType
             }-${args.node_class}";
           in
-          lib.nameValuePair asgName attrs));
+            lib.nameValuePair asgName attrs)
+        );
       coreNodes = {
         core-1 = {
           instanceType = "t3a.medium";
