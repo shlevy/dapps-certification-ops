@@ -32,12 +32,6 @@ in {
           (bitte + "/profiles/client.nix")
           ./secrets.nix
           ./nomad-client-config.nix
-          # Support bridge mode http consul access via the docker interface, if it exists
-          (
-            {
-              services.consul.addresses.http = "127.0.0.1 {{ GetInterfaceIP \"docker0\" }}";
-            }
-          )
           (
             {
               boot.kernelModules = ["softdog"];
@@ -120,7 +114,6 @@ in {
           volumeSize = 300;
           route53.domains = [
             "consul.${cluster.domain}"
-            "docker.${cluster.domain}"
             "monitoring.${cluster.domain}"
             "nomad.${cluster.domain}"
             "vault.${cluster.domain}"
@@ -135,7 +128,6 @@ in {
               ssh
               http
               https
-              docker-registry
               ;
           };
         };

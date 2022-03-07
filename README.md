@@ -1,4 +1,4 @@
-# Atala World
+# Dapps Certification Cluster
 
 Atala World is a project that declares atala environments leveraging the
 [`bitte`][bitte] stack & cloud scheduler, beyond kubernetes.
@@ -22,7 +22,6 @@ This repository defines the following **Organelles**:
 - **Runnables**:
   - Just Tasks ["repoautomation"] (flake output: `justTasks`)
 - **Functions**:
-  - OCI Images ["docker"] (flake output: `oci-images`)
   - Bitte Profile (flake output: `bitteProfile`)
   - Nomad Schedulable Environments (flake output: `nomadEnvs`)
   - Hydration Profiles (`hydrationProfiles`)
