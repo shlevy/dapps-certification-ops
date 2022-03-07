@@ -112,12 +112,6 @@ in {
           privateIP = "172.16.0.20";
           subnet = cluster.vpc.subnets.core-1;
           volumeSize = 300;
-          route53.domains = [
-            "consul.${cluster.domain}"
-            "monitoring.${cluster.domain}"
-            "nomad.${cluster.domain}"
-            "vault.${cluster.domain}"
-          ];
           modules = [(bitte + /profiles/monitoring.nix) ./secrets.nix];
 
           securityGroupRules = {
@@ -136,7 +130,13 @@ in {
           privateIP = "172.16.1.20";
           subnet = cluster.vpc.subnets.core-2;
           volumeSize = 30;
-          route53.domains = ["*.${cluster.domain}"];
+          route53.domains = [
+            "*.${cluster.domain}"
+            "consul.${cluster.domain}"
+            "monitoring.${cluster.domain}"
+            "nomad.${cluster.domain}"
+            "vault.${cluster.domain}"
+          ];
           modules = [(bitte + /profiles/routing.nix) ./secrets.nix];
           securityGroupRules = {
             inherit
